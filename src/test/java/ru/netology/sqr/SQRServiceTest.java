@@ -12,7 +12,7 @@ class SQRServiceTest {
     @CsvSource(value = {"200,300,3", "100,9801,90", "1,2,0", "100,101,1", "99,9801,90", "101,9801,89", "100,9800,89", "100,9802,90"})
     void shouldSqrCount(int lowerRangeLimit, int upperRangeLimit, int expected) {
         SQRService service = new SQRService();
-        int actual = service.SqrCount(lowerRangeLimit, upperRangeLimit);
+        int actual = service.sqrCount(lowerRangeLimit, upperRangeLimit);
 
         assertEquals(expected, actual);
     }
